@@ -1,0 +1,193 @@
+ /* Color Palette and Font Variables */
+    :root {
+        --font-viaoda: 'Viaoda Libre';
+        --font-lobster: 'Lobster', cursive;
+        --font-londrina-shadow: 'Londrina Shadow', cursive;
+        --font-londrina-solid: 'Londrina Solid', cursive;
+        --font-open-sans: 'Open Sans Condensed', sans-serif;
+        --font-pt-sans: 'PT Sans', sans-serif;
+
+        --white: #fff;
+        --silver: silver;
+        --gray: gray;
+        --bluish: #526a99;
+
+        --section-borders: 5px dashed purple;  
+    }
+
+    /* REF: https://www.educba.com/css-blinking-text/ */
+    h3{
+        color: green;
+        }
+        .a1, .a2{
+        animation:blinking 5s infinite;
+        font-size: 12px;
+        }
+        @keyframes blinking{
+        0%{   color: maroon;   }
+        47%{   color: #000; }
+        62%{   color: transparent; }
+        97%{   color: transparent; }
+        100%{  color: #000;   }
+        }
+
+body {
+    width: 100%;
+    align-content: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, lightblue, rgb(170, 248, 170));
+}
+
+.proj-img {
+    display: block;
+    margin: 25px;
+    height: 200px;
+    width: 400px;
+}
+
+/* Header Properties - Class Selectors & ID Selector */
+
+    /* Developer Name */
+    .header {
+        margin: 0 auto;
+        /* font-family: var(--font-pt-sans); */
+        /* font-family: var(--font-lobster); */
+        font-family: var(--font-viaoda);
+        font-weight: bold;
+        font-size: 35px;
+        letter-spacing: 5px;
+        text-align: center;
+        /* text-transform: uppercase; */
+    }
+
+    /* Developer Photo */
+    #avatar {
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    /* Site Purpose */
+    .hdr-section h2 {
+        font-family: var(--font-open-sans);
+        font-weight:lighter;
+        font-size: 18px;
+        letter-spacing: 10px;
+    }
+
+    /* Navigation */
+    nav ul li {
+        display: inline-flex;
+        /* float: left; */
+        margin: 0;
+        background-color: var(--silver);
+        border-radius: 6%;
+        list-style-type: none;
+        font-family: var(--font-open-sans);
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 5px;
+      }
+      
+      nav a {
+        display: block;
+        text-align: center;
+        padding: 7px 8px;
+        text-decoration: none;
+        color: var(--white);
+      }
+      
+      nav a:hover {
+        color: var(--bluish);
+      }
+
+/* Element Selectors, Class Selectors */
+
+    /* Container for the content of the body. */
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: lemonchiffon; */
+        height: 90%;
+        /* border: var(--section-borders);   */
+    }
+
+    /* Placeholder image properties */
+    .content img {
+        display: block;
+        margin: 25px;
+        height: 200px;
+        width: 400px;
+    }
+
+    .content h3 {
+        font-family: var(--font-open-sans);
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    table.center {
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+    #hdr-row {
+        vertical-align: middle;
+        height: 50px;
+    }
+
+    /* OSU Showcase */
+    .osu-section {
+        display: flex;
+        margin: 20px;
+        /* background-color:peachpuff; */
+        width: 95%;
+        /* border: var(--section-borders); */
+    }
+
+    /* Graphics Showcase */
+    .graphics-section {
+        display: flex;
+        margin: 20px;
+        background-color: greenyellow;
+        width: 95%;
+        border: var(--section-borders);
+    }
+
+    /* Data Showcase */
+    .data-section {
+        display: flex;
+        margin: 20px;
+        background-color: hotpink;
+        width: 95%;
+        border: var(--section-borders);
+    }
+
+    /* Application Showcase */
+    .app-section {
+        display: flex;
+        margin: 20px;
+        background-color: lightskyblue;
+        width: 95%;
+        border: var(--section-borders);
+    }
+
+/* Footer Properties - Class Selectors & ID Selectors */
+.footer {
+    margin: 20px;
+    text-align: center;
+    letter-spacing: 5px;
+    padding-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+#copyright {
+    font-family: var(--font-lobster);
+}
+
+#reserved {
+    font-family: var(--font-londrina-shadow);
+}

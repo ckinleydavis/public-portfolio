@@ -63,6 +63,39 @@
     a:hover img { 
         display:block; 
     }
+
+    .company-header-avatar{
+        width: 60px;
+        height: 60px;
+        -webkit-border-radius: 60px;
+        -webkit-background-clip: padding-box;
+        -moz-border-radius: 60px;
+        -moz-background-clip: padding;
+        border-radius: 60px;
+        background-clip: padding-box;
+        margin: 7px 0 0 5px;
+        float: left;
+        vertical-align: middle;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #resp-table {
+        width: 100%;
+        display: table;
+    }
+
+    #resp-table-body {
+        display: table-row-group;
+    }
+
+    .resp-table-row {
+        display: table-row;
+    }
+
+    .table-body-cell {
+        display: table-cell;
+    }
     
     h1 { 
         font-family: var(--font-libre-lucida);

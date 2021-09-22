@@ -1,147 +1,254 @@
 <!DOCTYPE html>
+
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>kinleydavis.com</title>
-        
-        <!-- Favicon Generator: https://favicon.io -->
-        <link 
-            rel="shortcut icon" 
-            href="./assets/img/sonsie-one-favicon.ico"
-        />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>kinleydavis.com</title>
 
-        <!-- CDN Reset -->
-        <link 
-            rel="stylesheet" 
-            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" 
-            integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" 
-            crossorigin="anonymous" 
-        /> 
+  <!-- Favicon Generator: https://favicon.io -->
+  <link 
+    rel="shortcut icon" 
+    href="./assets/img/sonsie-one-favicon.ico"
+  />
+  
+  <!-- Independent Styling -->
+  <link 
+    rel="stylesheet" 
+    href="./assets/css/style.css"
+  />
+  
+  <script src="/static/js/bundles/human-job-titles-desktop.3e54180a4b9ccad9b723.js" defer="defer"></script>
 
-        <!-- BootStrap -->
-        <link 
-            rel="stylesheet" 
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-            crossorigin="anonymous"
-        />
+</head>
+<body>
+  <div id="modal-root"></div>
+  <div id="root">
+    <div class="nav-header sticky">
+        <div class="top-bar">
+            <div class="top-nav">
+              <div class="top-bar-logo">
+                  <a href="/" class="header-logo">
+                      <div class="ladders-logo"></div>
+                  </a>
+              </div>
+              <div class="nav">
+                <nav>
 
-        <!-- Google Fonts -->
-        <link 
-            rel="preconnect" 
-            href="https://fonts.googleapis.com"
-        />
-
-        <link 
-            rel="preconnect" 
-            href="https://fonts.gstatic.com"
-            crossorigin
-        />
-
-        <link 
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&Lobster&family=Londrina+Shadow&family=Londrina+Solid&family=Open+Sans+Condensed:wght@300&family=PT+Sans&display=swap" 
-        />
-
-        <!-- Independent Styling -->
-        <link 
-            rel="stylesheet" 
-            href="./assets/css/style.css"
-        />
-    </head>
-    <body>
-        <div class="container-fluid">
-            <div class="row justify-content-md-center">
-                <!-- Header Section -->
-                <div class="col-md-auto">
-                    <div class="header">
-                        <header>
-                            <h1>Carla Kinley-Davis</h1>
-                            <p><img id="avatar" src="./assets/images/avatar-kinley-davis.png" alt="Photo of Kinley Davis"></p>
-                        </header>
+                  <span class="header-link news-header-link ">
+                    <a 
+                      href="/jobs/search-jobs" 
+                      data-qaid="lgn-member-jobs" 
+                      id="guest-jobs" 
+                      data-testid="guest-destop-header-jobs-tab" 
+                      class="header-link jobs-header-link ">
+                        <span>GitHub</span>
+                    </a> 
+                  </span>
                         
-                        <section class="hdr-section">
-                            <h2>Web Developer | Data Analyst</h2>
-                        </section>
-
-                        <!-- Navigation -->
-                        <section class="nav">
-                            <nav>
-                                <ul>
-                                    <li><a href="mailto://datascientist@gmail.com" target="_blank">Contact Me</a></li>
-                                    <li><a href="https://github.com/ckinleydavis" target="_blank">GitHub</a></li>
-                                    <li><a href="https://www.linkedin.com/in/ckinleydavis/" target="_blank">LinkedIn</a></li>
-                                    <li><a href="https://open.spotify.com/user/1227450862?si=CRTlsI7JRuy0B2E7VxElRQ" target="_blank">Spotify</a></li>
-                                </ul>
-                            </nav>
-                        </section>
-                    </div>
-                    <div><p>&nbsp;</p></div>
-                </div>
-                <!-- Placeholder for Portfolio Items -->
-                <div class="col-md-auto">
-                    <!-- <div class="content"> -->
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-auto">
-                            <figure class="figure">
-                                <figcaption class="figure-caption text-center">
-                                    <h3>Pokedex</h3>
-                                    <a href="https://github.com/ckinleydavis/Project_1" target="_blank">GitHub Repository</a>
-                                    <p>Click the image below to view live demo.</p>
-                                    <p class="a1">Working</p>
-                                    <!-- <p class="a2">Blinking Text Test Two</p> -->
-                                </figcaption>
-                                <a href="https://ckinleydavis.github.io/Project_1/" target="_blank">
-                                    <img src="./assets/images/project-pokedex.png" class="figure-img img-fluid rounded proj-img" alt="Pokedex">
-                                </a>
-                            </figure>
-                        </div>
-                        <div class="col-md-auto">
-                            <figure class="figure">
-                                <figcaption class="figure-caption text-center">
-                                    <h3>Weather Dashboard</h3>
-                                    <a href="https://github.com/ckinleydavis/weather-dashboard" target="_blank">GitHub Repository</a>
-                                    <p>Click the image below to view live demo.</p>
-                                    <p class="a1">Work in Progress</p>
-                                </figcaption>
-                                <a href="https://ckinleydavis.github.io/weather-dashboard/" target="_blank">
-                                    <img src="./assets/images/project-weather-dashboard.png" class="figure-img img-fluid rounded proj-img" alt="Weather Dashboard">
-                                </a>
-                            </figure>
-                        </div>
-                        <div class="col-md-auto">
-                            <figure class="figure">
-                                <figcaption class="figure-caption text-center">
-                                    <h3>CCBBRA</h3>
-                                    <a href="https://github.com/ckinleydavis/CCBBRA" target="_blank">GitHub Repository</a>
-                                    <p>Click the image below to view live demo.</p>
-                                    <p class="a1">Working</p>
-                                </figcaption>
-                                <a href="https://boiling-waters-18082.herokuapp.com/" target="_blank">
-                                    <img src="./assets/images/project-ccbbra.png" class="figure-img img-fluid rounded proj-img" alt="CCBBRA">
-                                </a>
-                            </figure>
-                        </div>
-                        
-                    </div>
-                </div>
+                  <span class="header-link resume-header-link ">
+                    <a 
+                      data-qaid="lgn-member-experts" 
+                      href="/resume" 
+                      class="">
+                      <span>LinkedIn</span>
+                    </a>
+                  </span>
                 
-                <div class="col-md-auto">
-                    <div class="footer">
-                        <p id="copyright">&copy;<!-- 2021 - --><script>document.write(new Date().getFullYear())</script>, Kinley Davis & Associates, LLC</p>
-                        <p id="reserved">All Rights Reserved</p>
-                    </div>
-                </div>
-            </div>  
+                  <span class="header-link experts-header-link ">
+                    <a 
+                      href="/experts" 
+                      data-qaid="lgn-member-experts" 
+                      data-testid="guest-destop-header-experts-tab" 
+                      class="">                      
+                      <span>Instagram</span>
+                    </a>
+                  </span>
+
+                  <span class="header-link news-header-link&quot; ">
+                    <a 
+                      href="/career-advice" 
+                      data-qaid="lgn-advice" 
+                      class="news-link">
+                      <span>Spotify</span>
+                    </a>
+                  </span>
+
+                  <span class="header-link news-header-link ">                
+                    <a 
+                      href="/apply4me" 
+                      data-qaid="lgn-premium-examples" 
+                      class="">
+                      <div class="header-sub-nav-link new-badge-background">            
+                        <span class="a4m-nav-link">Contact</span>
+                        <span class="new-badge">ME!</span>
+                      </div>
+                    </a>
+                  </span>
+
+                </nav>
+
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- JavaScript Libraries -->
-        <script 
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
-            crossorigin="anonymous">
-        </script>
-    </body>
+
+        <div class="white-header-container">
+    <div class="white-header-width-container">
+
+        <div class="breadcrumb" style="margin-bottom:36px">
+            PORTFOLIO</div>
+            <h2>Web Developer&nbsp;&nbsp;|&nbsp;&nbsp;Data Analyst</h2>
+            <h1>Carla Kinley-Davis</h1>
+            <p>Mrs. Davis received a Bachelor of Science in Information Technology from Wilberforce University (2008) and has ten years’ experience working as an IT contractor in a military environment. She is an active learner with a proficient skillset in HTML, CSS, JavaScript, MS SQL Server, Excel, etc.</p>
+          </div>
+        </div>
+
+        <div class="sitemap-job-title-page-container">
+          <div class="sitemap-job-title-page-inner-container">
+            <div class="sitemap-job-title-page-left">
+
+              <div class=" box border-default padding-small margin-small">
+                <table class="gray-white-table">
+                  <tbody>
+                    <tr>
+                      <td><a href="https://github.com/ckinleydavis/Project_1">Pokedex</a></td>
+                      <td><a href="https://github.com/ckinleydavis/weather-dashboard">Weather Dashboard</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://github.com/ckinleydavis/CCBBRA">CCBBRA</a></td>
+                      <td><a href="https://github.com/ckinleydavis/note-taker">Note Taker</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://github.com/ckinleydavis/employee-tracker">Employee Tracker</a></td>
+                      <td><a href="https://github.com/ckinleydavis/readme-generator">README.md Generator</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class=" box border-default padding-small margin-small">
+                <h3 class="sitemap-article-list-header">Quote of the Day:</h3>
+                  <div class="sitemap-article">
+                    <script>
+                      const settings = {
+                        "async": true,
+                        "crossDomain": true,
+                        "url": "https://qvoca-bestquotes-v1.p.rapidapi.com/quote",
+                        "method": "GET",
+                        "headers": {
+                          "x-rapidapi-host": "qvoca-bestquotes-v1.p.rapidapi.com",
+                          "x-rapidapi-key": "2249a3393emsh60f93dfd338f86ep1037f2jsn654231b759fc"
+                        }
+                      };
+
+                      $.ajax(settings).done(function (response) {
+                        console.log(response);
+                      });
+                    </script>
+                  </div> 
+    </div>
+  </div>
+  
+  <div class="sitemap-job-title-page-right">
+    <div class=" box border-default padding-small margin-small">
+      <a href="/sitemap">
+        <h3 class="title-links-header">Web Dev Projects</h3>
+      </a>
+      <div class="related-jobs-item-container"><a action="sitemap-ladders-resources" href="https://github.com/ckinleydavis/mvc-javascript-mysql">mvc-javascipt-mysql</a></div>
+      <div class="related-jobs-item-container"><a action="sitemap-ladders-resources" href="https://github.com/ckinleydavis/mvc-ruby-jekyll">mvc-ruby-jekyll</a></div>
+      <div class="related-jobs-item-container"><a action="sitemap-ladders-resources" href="https://github.com/ckinleydavis/mvc-react-mongo">mvc-react-mongo</a></div>
+    </div>
+
+    <div class=" box border-default padding-small margin-small">
+      <a href="/company">
+        <h3 class="title-links-header">Data Projects</h3>
+      </a>
+      <div class="related-jobs-item-container"><a action="sitemap-jobs-by-company" href="https://catalog.data.gov/dataset/provisional-covid-19-death-counts-in-the-united-states-by-county">COVID-19 Mobidity in the U.S. by County (JSON)</a></div>
+      <div class="related-jobs-item-container"><a action="sitemap-jobs-by-company" href="https://catalog.data.gov/dataset/national-wetlands-inventory-wetlands">National Wetlands Inventory - Wetlands (XML)</a></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="sitemap-job-title-page-bottom">
+  <div class="sitemap-job-title-page-bottom-inner">
+    <div class="gray-divider"></div>
+      <div class="more-news-desktop-container">
+        <h2>Tutorials</h2>
+        <ul>
+          <li>
+            <a 
+              href="https://gist.github.com/ckinleydavis/9372f49d9a6fcb20c2f1675b3b6bad26" 
+              action="publication-article-more-news">Simple Word Count Using RegEx
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+    </div>
+  </div>
+</div>
+  <!-- <script>
+  function shouldParse(arg) {
+    if (arg === undefined) {
+      return null;
+    }
+    return typeof arg === "string" ? JSON.parse(arg) : arg;
+  }
+  function shouldNullify(arg) {
+      return arg === undefined ? null : arg;
+  }
+  function shouldParseOrEmptyArr(arg) {
+    if (arg === undefined) {
+      return [];
+    } else if (Array.isArray(arg)) {
+      return arg;
+    } else {
+      return JSON.parse(arg);
+    }
+  }
+
+  function shouldStringify(arg) {
+    if (typeof arg === "string") {
+      return arg;
+    }
+    return arg === undefined ? null : JSON.stringify(arg);
+  }
+</script> -->
+  
+<footer class="lw-footer desktop-only">
+  <div class="desktop-footer-wrapper">
+    <div class="simple-footer-container">
+      <!-- <div class="ladders-logo-footer"></div> -->
+      <p id="reserved">K&nbsp;&nbsp;I&nbsp;&nbsp;N&nbsp;&nbsp;L&nbsp;&nbsp;E&nbsp;&nbsp;Y&nbsp;&nbsp;D&nbsp;&nbsp;A&nbsp;&nbsp;V&nbsp;&nbsp;I&nbsp;&nbsp;S</p>
+      <p>&nbsp;&nbsp;</p>
+      <div class="copyright" valign="center">
+        &copy;&nbsp;&nbsp;<!-- 2021 - --><script>document.write(new Date().getFullYear())</script>&nbsp;&nbsp;Kinley Davis & Associates, LLC
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script defer type="application/javascript" src="/static/js/header-3ae6bf7cd6.min.js"></script>
+
+<!-- Get list of classes used on this page -->
+<script>
+  let used = new Set();
+  let elements = document.getElementsByTagName('*');
+  for (let { className = '' } of elements) {
+      for (let name of className.split(' ')) {
+          if (name) {
+              used.add(name);
+          }
+      }
+  }
+  console.log(used.values());
+</script>
+
+</body>
 </html>

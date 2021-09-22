@@ -1,193 +1,862 @@
- /* Color Palette and Font Variables */
-    :root {
+:root {
+
+    /* Fonts */
         --font-viaoda: 'Viaoda Libre';
         --font-lobster: 'Lobster', cursive;
         --font-londrina-shadow: 'Londrina Shadow', cursive;
         --font-londrina-solid: 'Londrina Solid', cursive;
         --font-open-sans: 'Open Sans Condensed', sans-serif;
         --font-pt-sans: 'PT Sans', sans-serif;
-
+        --font-libre-lucida: 'Libre Franklin Light','Lucida Grande','sans-serif';
+    
+    /* For hexadecimal color names - https://www.colorhexa.com/ */
+    
         --white: #fff;
+        --light-gray: #f5f5f5;
         --silver: silver;
         --gray: gray;
-        --bluish: #526a99;
-
+        --dark-cyan: #08818c;
+        --light-cyan: #0994a0;
+        --moderate-blue: #526a99;
+    
+        --linear-gradient: linear-gradient(180deg, lightblue, rgb(170, 248, 170));
+    
         --section-borders: 5px dashed purple;  
     }
-
-    /* REF: https://www.educba.com/css-blinking-text/ */
-    h3{
+    
+    * { 
+        box-sizing:border-box;
+        -webkit-appearance:none;
+        -moz-appearance:none; 
+    }
+    
+    body {
+        margin:0;
+        width: 100%;
+        align-content: center;
+        min-height: 100vh;
+        background: var(--linear-gradient);
+        background-color: var(--light-gray);
+        font-family: var(--font-libre-lucida);
+         
+    }
+    
+    a { 
+        font-family: var(--font-libre-lucida);
+        color: var(--dark-cyan);
+        transition:all .3s ease; 
+    }
+    
+    a, a:hover { 
+        text-decoration:none; 
+    }
+    
+    a:hover { 
+        color:var(--light-cyan);
+        cursor:pointer; 
+    }
+    
+    h1 { 
+        font-family: var(--font-libre-lucida);
+        font-weight:300;
+        font-size:36px;
+        color:#000;
+        margin:0;
+        letter-spacing:-.2px;
+        display:inline-block; 
+    }
+    
+    /* Blinking Text - https://www.educba.com/css-blinking-text/ */
+    h3 {
         color: green;
-        }
-        .a1, .a2{
+    }
+    
+    .a1, .a2{
         animation:blinking 5s infinite;
         font-size: 12px;
-        }
-        @keyframes blinking{
+    }
+    
+    @keyframes blinking {
         0%{   color: maroon;   }
         47%{   color: #000; }
         62%{   color: transparent; }
         97%{   color: transparent; }
         100%{  color: #000;   }
-        }
-
-body {
-    width: 100%;
-    align-content: center;
-    min-height: 100vh;
-    background: linear-gradient(180deg, lightblue, rgb(170, 248, 170));
-}
-
-.proj-img {
-    display: block;
-    margin: 25px;
-    height: 200px;
-    width: 400px;
-}
-
-/* Header Properties - Class Selectors & ID Selector */
-
-    /* Developer Name */
-    .header {
-        margin: 0 auto;
-        /* font-family: var(--font-pt-sans); */
-        /* font-family: var(--font-lobster); */
-        font-family: var(--font-viaoda);
-        font-weight: bold;
-        font-size: 35px;
-        letter-spacing: 5px;
-        text-align: center;
-        /* text-transform: uppercase; */
     }
-
-    /* Developer Photo */
-    #avatar {
-        height: 150px;
-        border-radius: 50%;
+    
+    h2, h3, h4, h5, h6 { 
+        letter-spacing: -.2px; 
     }
-
-    /* Site Purpose */
-    .hdr-section h2 {
-        font-family: var(--font-open-sans);
-        font-weight:lighter;
-        font-size: 18px;
-        letter-spacing: 10px;
+    
+    h2, h3, h4, h5, h6, p { 
+        font-family: var(--font-libre-lucida);
+        color:#333;
+        margin:0; 
     }
-
-    /* Navigation */
-    nav ul li {
-        display: inline-flex;
-        /* float: left; */
-        margin: 0;
-        background-color: var(--silver);
-        border-radius: 6%;
-        list-style-type: none;
-        font-family: var(--font-open-sans);
-        font-weight: bold;
-        font-size: 14px;
-        text-align: center;
-        letter-spacing: 5px;
-      }
-      
-      nav a {
-        display: block;
-        text-align: center;
-        padding: 7px 8px;
-        text-decoration: none;
-        color: var(--white);
-      }
-      
-      nav a:hover {
-        color: var(--bluish);
-      }
-
-/* Element Selectors, Class Selectors */
-
-    /* Container for the content of the body. */
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* background-color: lemonchiffon; */
-        height: 90%;
-        /* border: var(--section-borders);   */
+    
+    p { 
+        font-size:16px;
+        font-weight:300; 
     }
-
-    /* Placeholder image properties */
-    .content img {
+    
+    ol, ul { 
+        list-style:none;
+        padding:0;
+        margin:0; }
+        
+    img { 
+        max-width:100%;
+        height:auto; 
+    }
+    
+    .proj-img {
         display: block;
         margin: 25px;
         height: 200px;
         width: 400px;
     }
-
-    .content h3 {
-        font-family: var(--font-open-sans);
-        font-weight: bold;
-        font-size: 18px;
+    
+    /* Header Properties - Class Selectors & ID Selector */
+    
+        /* Developer Name */
+        .header {
+            margin: 0 auto;
+            /* font-family: var(--font-pt-sans); */
+            /* font-family: var(--font-lobster); */
+            font-family: var(--font-viaoda);
+            font-weight: bold;
+            font-size: 35px;
+            letter-spacing: 5px;
+            text-align: center;
+            /* text-transform: uppercase; */
+        }
+    
+        /* Developer Photo */
+        #avatar {
+            height: 150px;
+            border-radius: 50%;
+        }
+    
+        /* Site Purpose */
+        .hdr-section h2 {
+            font-family: var(--font-open-sans);
+            font-weight:lighter;
+            font-size: 18px;
+            letter-spacing: 10px;
+        }
+    
+        /* Navigation */
+        nav ul li {
+            display: inline-flex;
+            /* float: left; */
+            margin: 0;
+            background-color: var(--silver);
+            border-radius: 6%;
+            list-style-type: none;
+            font-family: var(--font-open-sans);
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+            letter-spacing: 5px;
+          }
+          
+          nav a {
+            display: block;
+            text-align: center;
+            padding: 7px 8px;
+            text-decoration: none;
+            color: var(--white);
+          }
+          
+          nav a:hover {
+            color: var(--moderate-blue);
+          }
+    
+    /* Element Selectors, Class Selectors */
+    
+        /* Container for the content of the body. */
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-color: lemonchiffon; */
+            height: 90%;
+            /* border: var(--section-borders);   */
+        }
+    
+        /* Placeholder image properties */
+        .content img {
+            display: block;
+            margin: 25px;
+            height: 200px;
+            width: 400px;
+        }
+    
+        .content h3 {
+            font-family: var(--font-open-sans);
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+        }
+    
+        table.center {
+            margin-left: auto; 
+            margin-right: auto;
+        }
+    
+        #hdr-row {
+            vertical-align: middle;
+            height: 50px;
+        }
+    
+        /* OSU Showcase */
+        .osu-section {
+            display: flex;
+            margin: 20px;
+            /* background-color:peachpuff; */
+            width: 95%;
+            /* border: var(--section-borders); */
+        }
+    
+        /* Graphics Showcase */
+        .graphics-section {
+            display: flex;
+            margin: 20px;
+            background-color: greenyellow;
+            width: 95%;
+            border: var(--section-borders);
+        }
+    
+        /* Data Showcase */
+        .data-section {
+            display: flex;
+            margin: 20px;
+            background-color: hotpink;
+            width: 95%;
+            border: var(--section-borders);
+        }
+    
+        /* Application Showcase */
+        .app-section {
+            display: flex;
+            margin: 20px;
+            background-color: lightskyblue;
+            width: 95%;
+            border: var(--section-borders);
+        }
+    
+    /* Footer Properties - Class Selectors & ID Selectors */
+    .footer {
+        margin: 20px;
         text-align: center;
+        letter-spacing: 5px;
+        padding-bottom: 25px;
+        padding-bottom: 25px;
     }
-
-    table.center {
-        margin-left: auto; 
-        margin-right: auto;
+    
+    #copyright {
+        font-family: var(--font-lobster);
     }
-
-    #hdr-row {
-        vertical-align: middle;
-        height: 50px;
+    
+    #reserved {
+        font-family: var(--font-londrina-shadow);
     }
-
-    /* OSU Showcase */
-    .osu-section {
-        display: flex;
-        margin: 20px;
-        /* background-color:peachpuff; */
-        width: 95%;
-        /* border: var(--section-borders); */
+    
+    /* ************************* */
+    /* New Styles Added 20210902 */
+    /* ************************* */
+    
+    .nav-header { 
+        border-bottom:1px solid #d8d8d8;
+        background-color:#fff;
     }
-
-    /* Graphics Showcase */
-    .graphics-section {
-        display: flex;
-        margin: 20px;
-        background-color: greenyellow;
-        width: 95%;
-        border: var(--section-borders);
+    
+    .nav-header .top-bar .top-nav {
+        display:flex;
+        align-items:center;
+        min-width:1000px;
+        margin:0 auto;
+        padding:0 50px;
+        max-width:1440px;
+        width:auto;
+        height:65px;
     }
-
-    /* Data Showcase */
-    .data-section {
-        display: flex;
-        margin: 20px;
-        background-color: hotpink;
-        width: 95%;
-        border: var(--section-borders);
+    
+    .nav-header .top-bar .top-nav .top-bar-logo {
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
     }
-
-    /* Application Showcase */
-    .app-section {
-        display: flex;
-        margin: 20px;
-        background-color: lightskyblue;
-        width: 95%;
-        border: var(--section-borders);
+    
+    .nav-header .top-bar .nav {
+        display:flex;
+        flex-basis:100%;
     }
-
-/* Footer Properties - Class Selectors & ID Selectors */
-.footer {
-    margin: 20px;
-    text-align: center;
-    letter-spacing: 5px;
-    padding-bottom: 25px;
-    padding-bottom: 25px;
-}
-
-#copyright {
-    font-family: var(--font-lobster);
-}
-
-#reserved {
-    font-family: var(--font-londrina-shadow);
-}
+    
+    .nav-header .top-bar .nav nav {
+        width:50%;
+        flex-grow:1;
+        display:flex;
+        align-items:center;
+    }
+    
+    .nav-header .top-bar .nav nav:first-child {
+        justify-content:flex-start;
+        padding-left:20px;
+    }
+    
+    .nav-header .top-bar .nav nav:last-child {
+        justify-content:flex-end;
+    }
+    
+    .nav-header .top-bar .nav nav:last-child a {
+        color:#333;
+    }
+    
+    .nav-header .top-bar .nav nav>a,
+    .nav-header .top-bar .nav nav>span>a {
+        font-family:Libre Franklin,Lucida Grande,sans-serif;
+        display:block;
+        color:#333;
+        text-decoration:none;
+        font-size:16px;
+        height:50px;
+        line-height:50px;
+        padding-left:15px;
+        padding-right:15px;
+        position:relative;
+        white-space:nowrap;
+    }
+    
+    .nav-header .top-bar .nav nav>a.active,
+    .nav-header .top-bar .nav nav>a:hover,
+    .nav-header .top-bar .nav nav>span>a.active,
+    .nav-header .top-bar .nav nav>span>a:hover {
+        color:#00c0d1;
+    
+    }
+    
+    .nav-header .top-bar .nav nav>a>span,
+    .nav-header .top-bar .nav nav>span>a>span {
+        font-family:Libre Franklin, Lucida Grande,sans-serif;
+        position:relative; 
+    }
+    
+    .nav-header .top-bar .nav .signup-btn {
+        border:1px solid #00c0d1;
+        border-radius:2px;
+        font-size:14px;
+        padding:6px 12px;
+        cursor:pointer;
+        min-width:108px;
+    }
+    
+    .nav-header .top-bar .header-link {
+        position:relative;
+    }
+    
+    .nav-header .top-bar .header-link .tip {
+        position:absolute;
+        color:#000;
+        left:calc(50% - 8px);
+        top:42px;
+        height:8px;
+        width:16px;
+        z-index:1;
+        display:none;
+    }
+    
+    .nav-header .top-bar .header-link .tip.active {
+        display:block;
+    }
+    
+    .nav-header .top-bar .header-link .tip:after {
+        bottom:100%;
+        content:" ";
+        display:block;
+        position:absolute;
+        bottom:0;
+        pointer-events:none;
+        border:8px solid hsla(0,0%,100%,0);
+        border-bottom-color:#fff;
+    }
+    
+    .nav-header .top-bar .header-link.active>a {
+        color:#00c0d1;
+    }
+    
+    .nav-header .top-bar .header-link.active .dropdown,
+    .nav-header .top-bar .header-link.active .tip {
+        display:block!important;
+    }
+    
+    .nav-header.sticky {
+        position:sticky;
+        position:-webkit-sticky;
+        position:-moz-sticky;
+        position:-ms-sticky;
+        position:-o-sticky;
+        z-index:99999;
+        top:0;
+    }
+    
+    .nav-header .top-bar .top-nav .nav nav:first-child {
+        width:65%;
+    }
+    
+    .nav-header .top-bar .top-nav .nav nav:last-child {
+        width:40%;
+    }
+    
+    .nav-header .top-bar .top-nav .nav nav:last-child a>span {
+        top:1px;
+        font-family:Libre Franklin,Lucida Grande,sans-serif;
+    }
+    
+    .nav-header .top-bar .top-nav .nav nav:last-child>.spacer {
+        top:2px;
+    }
+    
+    .nav-header .top-bar .top-nav .nav nav .spacer {
+        height:16px; 
+    }
+    
+    .header-sub-nav-link { 
+        display:inline-flex;
+        align-items:center; 
+    }
+    
+    .ladders-logo { 
+        width:113px;
+        height:45px;
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-image:url(/static/images/logo-100k-club-filagree.svg); 
+    }
+    
+    .header-right .signup-btn { 
+        border:1px solid #00c0d1;
+        border-radius:2px;
+        font-size:14px;
+        padding:6px 12px;
+        cursor:pointer; 
+    }
+    
+    .a4m-nav-link { 
+        display:flex;
+        align-items:center; 
+    }
+    
+    .new-badge { 
+        font-size:11px;
+        font-weight:600;
+        letter-spacing:.5px;
+        color:#09aebc;
+        margin-left:5px; 
+    }
+    
+    .new-badge-background { 
+        background-color:#eafeff;
+        padding:5px 10px;
+        color:#333;
+        width:135px;
+        height:30px;
+        margin:9px 0; 
+    }
+    
+    .breadcrumb a { 
+        display:inline-block; 
+    }
+    
+    .breadcrumb a:active { 
+        color:#00c0d1; 
+    }
+    
+    .breadcrumb a:last-child { 
+        display:initial; 
+    }
+    
+    .breadcrumb span { 
+        display:inline-block; 
+    }
+    
+    .breadcrumb-divider { 
+        color:#ccc;
+        font-size:14px;
+        margin:0 5px; 
+    }
+    
+    .white-header-container { 
+        width:100%;
+        min-width:1050px;
+        min-height:177px;
+        height:auto;
+        background-color:#fff;
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        border-bottom:1px solid #e6e6e6; 
+    }
+    
+    .white-header-width-container { 
+        width:1050px;
+        margin:0 auto;
+        padding:50px 0 50px 50px; 
+    }
+    
+    .white-header-width-container h1 { 
+        font-family:Libre Franklin,Lucida Grande,sans-serif;
+        font-size:36px;
+        letter-spacing:0;
+        color:#000;
+        margin-bottom:12px; 
+    }
+    
+    .white-header-width-container h2 { 
+        font-size:24px;
+        line-height:30px;
+        letter-spacing:0;
+        color:#333;
+        margin:10px 0 12px; 
+    }
+    
+    .white-header-width-container p { 
+        font-family:Libre Franklin,Lucida Grande,sans-serif;
+        font-size:16px;
+        line-height:1.5;
+        color:#333;
+        max-width:800px;
+        min-width:500px; 
+    }
+    
+    .box { 
+        width:100%;
+        background-color:#fff;
+        border-radius:2px; 
+    }
+    
+    .box .header-margins { 
+        margin:0 0 15px; 
+    }
+    
+    .padding-small { 
+        padding:27px 16px; 
+    }
+    
+    .margin-small { 
+        margin:20px 0; 
+    }
+    
+    .border-default { 
+        border:1px solid #e6e6e6;
+        background-color:#fff; 
+    }
+    
+    .related-jobs-item-container { 
+        margin-top:18px; 
+    }
+    
+    .related-jobs-item-container a { 
+        font-family:Libre Franklin,Lucida Grande,sans-serif;
+        font-size:16px;
+        font-weight:500;
+        color:#2d3e3f;
+    }
+    
+    .related-jobs-item-container p { 
+        font-weight:300;
+        color:#333;
+        margin-top:5px; 
+    }
+    
+    .title-links-header { 
+        margin-top:0;
+        font-size:24px;
+        font-weight:300;
+        letter-spacing:0;
+        color:#333; 
+    }
+    
+    .title-links-header a { 
+        color:#333; 
+    }
+    
+    h2.title-links-header { 
+        font-family:Libre Franklin Medium,Lucida Grande,sans-serif;
+        font-size:20px;
+        line-height:1.5;
+        letter-spacing:normal;
+        margin-bottom:20px; 
+    }
+    
+    .gray-white-table { 
+        border-collapse:collapse;
+        border-style:hidden;
+        width:100%; 
+    }
+    
+    .gray-white-table td:first-child { 
+        margin-right:50px;
+        display:block;
+        padding-left:15px; 
+    }
+    
+    .gray-white-table td { 
+        border:none;
+        padding:10px 0; 
+    }
+    
+    .gray-white-table tr:nth-child(odd) { 
+        background:#f5f5f5; 
+    }
+    
+    .sitemap-article { 
+        display:flex; 
+    }
+    
+    .sitemap-article-list-header { 
+        font-size:20px;
+        line-height:28px;
+        letter-spacing:0;
+        color:#333;
+        margin:0 0 18.5px; 
+    }
+    
+    .gray-divider { 
+        width:100%;
+        height:2px;
+        background-color:#d6d6d6;
+        margin:25px 0; 
+    }
+    
+    .more-news-desktop-container { 
+        opacity:.9;
+        background-color:#fff;
+        border:1px solid #ccc;
+        padding:20px 15px 25px 30px; 
+    }
+    
+    .more-news-desktop-container h2 { 
+        font-family:Libre Franklin Medium,Lucida Grande,sans-serif;
+        margin-top:0;
+        margin-bottom:10px;
+        font-size:18px;
+        font-weight:500;
+        font-style:normal;
+        font-stretch:normal;
+        line-height:normal;
+        letter-spacing:normal;
+        text-align:left;
+        color:#333; 
+    }
+    
+    .more-news-desktop-container ul { 
+        margin:0;
+        list-style:inherit;
+        list-style-position:outside;
+        padding-left:20px;
+        color:#333; 
+    }
+    
+    .more-news-desktop-container ul li { 
+        margin-bottom:1px; 
+    }
+    
+    .more-news-desktop-container ul a { 
+        font-family:Libre Franklin Light,Lucida Grande,sans-serif;
+        font-size:14px;
+        font-weight:400;
+        font-style:normal;
+        font-stretch:normal;
+        line-height:1.57;
+        letter-spacing:normal;
+        text-align:left;
+        color:#09aebc; 
+    }
+    
+    @font-face { 
+        font-family:Libre Franklin;
+        font-style:normal;
+        font-weight:400;
+        font-display:swap;
+        src:local("Libre Franklin"),
+            local("LibreFranklin-Regular"),
+            url(https://fonts.gstatic.com/s/librefranklin/v1/PFwjf3aDdAQPvNKUrT3U7zi6aZXXSmqDXSFqcYJu3PE.ttf) 
+            format("truetype"); 
+    }
+    
+    @font-face { 
+        font-family:Libre Franklin Light Italic;
+        font-style:italic;
+        font-weight:300;
+        font-display:swap;
+        src:local("Libre Franklin Light Italic"),
+            local("LibreFranklin-LightItalic"),
+            url(https://fonts.gstatic.com/s/librefranklin/v1/7_V210XP3LBEtEwiCTqho9nnMzu0H6LE-iO630Gsjk4.ttf) 
+            format("truetype"); 
+    }
+    
+    @font-face { 
+        font-family:Libre Franklin Light;
+        font-style:normal;
+        font-weight:300;
+        font-display:swap;
+        src:local("Libre Franklin Light"),
+            local("LibreFranklin-Light"),
+            url(https://fonts.gstatic.com/s/librefranklin/v1/1_DGDtljMiPWFs5rl_p0yNga15RJ_Jvq5Ez6sL0RHQ8.ttf) 
+            format("truetype"); 
+    }
+    
+    @font-face { 
+        font-family:Libre Franklin Medium;
+        font-style:normal;
+        font-weight:500;
+        font-display:swap;
+        src:local("Libre Franklin Medium"),
+            local("LibreFranklin-Medium"),
+            url(https://fonts.gstatic.com/s/librefranklin/v1/1_DGDtljMiPWFs5rl_p0yDIg7xg1NL0FMLS-tJoj3pU.ttf) 
+            format("truetype"); 
+    }
+    
+    @font-face { 
+        font-family:PT Mono;
+        font-style:normal;
+        font-weight:400;
+        font-display:swap;
+        src:local("PT Mono"),
+            local("PT-Mono"),
+            url(https://fonts.googleapis.com/css2?display=swap&family=PT+Mono) 
+            format("truetype"); 
+    }
+    
+    
+    
+    
+    
+    @media only screen and (max-width:47.936em) { 
+        h1 { font-size:28px; }
+        h2 { font-size:30px;font-weight:300; }
+    }
+    
+    @media only screen and (max-width:47.936em) { 
+        h2 { font-size:24px; }
+    }
+    
+    
+    
+    .sitemap-job-title-page-container { 
+        background:#f1f9ff; 
+    }
+    
+    .sitemap-job-title-page-inner-container { 
+        display:flex;
+        width:1050px;
+        margin:0 auto;
+        padding:35px 50px; 
+    }
+    
+    .sitemap-job-title-page-left { 
+        width:620px;
+        margin-right:60px; 
+    }
+    
+    .sitemap-job-title-page-right { 
+        width:320px; 
+    }
+    
+    .sitemap-job-title-page-bottom { 
+        padding:10px 50px 50px;
+        background:#f1f9ff;
+        margin-bottom:-50px; 
+    }
+    
+    .sitemap-job-title-page-bottom-inner { 
+        width:1050px;
+        margin:0 auto; 
+    }
+    
+    @font-face { 
+        font-family:"Libre Franklin";
+        font-style:normal;
+        font-weight:400;
+        font-display:swap;
+        src:local("Libre Franklin"),
+            local("LibreFranklin-Regular"),
+            url(https://fonts.gstatic.com/s/librefranklin/v1/PFwjf3aDdAQPvNKUrT3U7zi6aZXXSmqDXSFqcYJu3PE.ttf) 
+            format("truetype"); 
+    }
+    
+    @font-face { 
+        font-family:"Libre Franklin Light Italic";
+        font-style:italic;
+        font-weight:300;
+        font-display:swap;
+        src:local("Libre Franklin Light Italic"),
+            local("LibreFranklin-LightItalic"),
+            url(https://fonts.gstatic.com/s/librefranklin/v1/7_V210XP3LBEtEwiCTqho9nnMzu0H6LE-iO630Gsjk4.ttf) 
+            format("truetype"); 
+    }
+    
+    @font-face { 
+        font-family:"Libre Franklin Light";
+        font-style:normal;
+        font-weight:300;
+        font-display:swap;
+        src:local("Libre Franklin Light"),
+            local("LibreFranklin-Light"),
+            url(https://fonts.gstatic.com/s/librefranklin/v1/1_DGDtljMiPWFs5rl_p0yNga15RJ_Jvq5Ez6sL0RHQ8.ttf) 
+            format("truetype"); 
+    }
+    
+    @font-face { 
+        font-family:"Libre Franklin Medium";
+        font-style:normal;
+        font-weight:500;
+        font-display:swap;
+        src:local("Libre Franklin Medium"),
+            local("LibreFranklin-Medium"),
+            url(https://fonts.gstatic.com/s/librefranklin/v1/1_DGDtljMiPWFs5rl_p0yDIg7xg1NL0FMLS-tJoj3pU.ttf) 
+            format("truetype"); 
+    }
+    
+    @font-face { 
+        font-family:"PT Mono";
+        font-style:normal;
+        font-weight:400;
+        font-display:swap;
+        src:local("PT Mono"),
+            local("PT-Mono"),
+            url(https://fonts.googleapis.com/css2?family=PT+Mono&display=swap) 
+            format("truetype"); 
+    }
+    
+    @media only screen and (max-width:47.936em) { 
+        .global-footer>div { 
+            padding-top:40px;
+            padding-left:15px;
+            padding-right:15px; 
+        } 
+    }
+    
+    .lw-footer { 
+        background:#fff;
+        border-top:1px solid #e5e5e5; 
+    }
+    
+    @media only screen and (max-width:47.936em) { 
+        .lw-footer { margin-top:0; }
+    }
+        
+    @media only screen and (max-width:66em) { 
+        .desktop-only { display:none; }
+    }
+    
+    .desktop-only .simple-footer-container { 
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        height:250px;
+        justify-content:center; 
+    }
+        

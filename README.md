@@ -46,16 +46,16 @@
 
 # Part 1 - Web Applications
 
-## A. Netflix Clone using Astra DB and GraphQL
+## 1. Netflix Clone using Astra DB and GraphQL
 
-## B. CCBB Rental Agency
+## 2. CCBB Rental Agency
 
-## C. Pokedex
+## 3. Pokedex
 
 <div><p>&nbsp;</p></div>
 
 # Part 2 - Data Applications
 
-## A. COVID-19 Mobidity in the U.S. by County (JSON)
+## 1. COVID-19 Mobidity in the U.S. by County (JSON)
 
-## B. National Wetlands Inventory - Wetlands (XML)
+## 2. National Wetlands Inventory - Wetlands (XML)

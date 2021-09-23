@@ -1,10 +1,10 @@
 # 🎓 Kinley Davis Public Portfolio
 
-*Web Developer, Data Analyst, [View Projects (Development in Progress)](#1-netflix-clone-using-astra-db-and-graphql)*
+
 
 <img src="./assets/images/avatar-kinley-davis.png" 
-    height="10%" 
-    width="10%"
+    height="7%" 
+    width="7%"
     border-radius="50%"
     background-clip="padding-box"
     margin="7px 0 0 5px"
@@ -15,11 +15,34 @@
     alt="Avatar of Carla Kinley-Davis"
     hspace="10"
     vspace="5"
-    align="left">Carla Kinley-Davis received a Bachelor of Science in Information Technology from Wilberforce University (2008) and has ten years’ experience working as an IT contractor in a military environment. She is an active learner with a proficient skillset in HTML, CSS, JavaScript, MS SQL Server, Excel, etc.
+    align="left">*Web Developer, Data Analyst, [View Projects (Development in Progress)](#1-netflix-clone-using-astra-db-and-graphql)*
+    
+<p>Carla Kinley-Davis received a Bachelor of Science in Information Technology from Wilberforce University (2008) and has ten years’ experience working as an IT contractor in a military environment. She is an active learner with a proficient skillset in HTML, CSS, JavaScript, MS SQL Server, Excel, etc.</p>
 
 <!-- ![img](./assets/images/avatar-kinley-davis.png#thumbnail "Avatar of Carla Kinley-Davis") -->
 
-<p>&nbsp;</p>
+<div><p>&nbsp;</p></div>
+
+## 🎯 Objectives
+
+* Learn the MERN Stack: **MongoDB (NoSQL)**, **Express.js**, **React.js**, and **Node.js**.
+* Integrate web applications with a variety of frameworks and APIs.
+* Leverage **GitHub**, **Heroku**, **Netlify**, and **DataStax Astra DB**.
+* Algorithmic development using T-SQL (**MS SQL Server**) and **JavaScript**.
+* Provide Continuous Delivery of projects deployed to production.
+
+<div><p>&nbsp;</p></div>
+
+## API Directories
+
+- [GitHub Public APIs](https://github.com/public-apis/public-apis)
+- [Moment.js](https://momentjs.com/)
+- [jQWidgets](https://www.jqwidgets.com/)
+- [OpenWeather API](https://openweathermap.org/api)
+- [NASA APIs](https://api.nasa.gov/)
+- [CoinMarketCap API](https://coinmarketcap.com/api/)
+
+<div><p>&nbsp;</p></div>
 
 # Part 1 - Web Applications
 
@@ -29,7 +52,7 @@
 
 ## C. Pokedex
 
-<p>&nbsp;</p>
+<div><p>&nbsp;</p></div>
 
 # Part 2 - Data Applications
 

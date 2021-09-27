@@ -35,7 +35,7 @@
         width: 100%;
         align-content: center;
         min-height: 100vh;
-        background: var(--linear-gradient);
+        /* background: var(--linear-gradient); */
         background-color: var(--light-gray);
         font-family: var(--font-libre-lucida);
          
